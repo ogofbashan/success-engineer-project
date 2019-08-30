@@ -7,7 +7,7 @@ const Navigation = () => (
     {" - "}
     <Link to="/about">About</Link>
     {" - "}
-    <Link to="/contact">Contact Us</Link>
+    <Link to="/contact">Contact Me</Link>
   </div>
 );
 

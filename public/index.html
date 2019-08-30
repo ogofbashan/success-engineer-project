@@ -2,6 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <script src="//fast.appcues.com/55224.js"></script>
+    <script>
+    //Source: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+    Appcues.on("flow_started",
+            function(eventobject) {
+              fetch("https://gorgeous-game.glitch.me/v1/events", {
+                  method: 'POST',
+                  mode: 'cors',
+                  cache: 'no-cache',
+                  credentials: 'same-origin',
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  redirect: 'follow',
+                  referrer: 'no-referrer',
+                  body: JSON.stringify(eventobject),
+                })
+                .then(response => response.json())
+                .then(response => console.log("success", JSON.stringify(response)))
+                .catch(response => console.log("error", response));
+              });
+
+  </script>
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">

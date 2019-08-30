@@ -2,11 +2,15 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
-      <h1>Contact Us</h1>
+    <div class="content-box">
+      <h1 class="header-text">Contact Me</h1>
       <p>
-        You can email us at{" "}
-        <a href="mailto:hello@greatcompany.com">hello@greatcompany.com</a>
+        My phone number is{" "}
+        <a href="tel:781-975-9554">781-975-9554</a>
+      </p>{" "}
+      <p>
+        My e-mail is{" "}
+        <a href="mailto:work.joe.og@gmail.com">work.joe.og@gmail.com</a>
       </p>{" "}
     </div>
   );

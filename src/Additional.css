@@ -1,0 +1,30 @@
+:root {
+  --blurple:#5C5CFF;
+}
+
+/* Created a box around the 2nd Div of the page. Object remains centered and
+and is responsive. */
+.content-box {
+  border-style: solid;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vh;
+  min-width: 50vh;
+  position: relative;
+  margin: 2em 30% auto 30%;
+}
+
+/* Added top text along with a background for the header of each page. */
+.header-text {
+  color: white;
+  text-align: center;
+  padding: .5em;
+  background-color: var(--blurple);
+  margin: 0;
+}
+
+/* Added padding formating to the paragraph element. */
+p {
+  padding: 0 .5em;
+}
