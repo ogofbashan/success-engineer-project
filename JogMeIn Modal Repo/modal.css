@@ -1,0 +1,77 @@
+:root {
+	--blurple: #5C5CFF;
+	/* Defined blurple as a color for the site. */
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+.modal-container {
+	width: 50%;
+	top: 25%;
+	position: absolute;
+	margin: 0 25%;
+	/* Created a border with a slight rouded edges */
+	border-style: solid;
+	border-width: thin;
+	border-radius: 5px;
+	border-color: #0B1A38;
+}
+
+.modal {
+	font-family: Muli, sans-serif;
+	text-align: center;
+	/* Defined the font and default alignment for the page. */
+}
+
+.header-text {
+	background-color: var(--blurple);
+	padding: .8em;
+	/* Used padding to make the background color fill the entire top section. */
+	color: white;
+}
+
+.header-text h3 {
+	font-size: .9em;
+	/* Reduced the size slightly from the default formatting for h3 */
+}
+
+.modal-content p {
+	text-align: left;
+	margin-left: 15%;
+	font-weight: bold;
+	color: #0B1A38;
+	/* Shifted the margins and changed the color to a slightly off black */
+}
+
+.reasons-list li {
+	text-align: left;
+	margin-left: 30%;
+	list-style: circle;
+	font-weight: lighter;
+	color: #20E0D6;
+	/* Shifted the margins and changed the bullet style. */
+}
+
+li:hover {
+	color: #2CB4FF;
+}
+
+li:visited {
+	color: #3923B7;
+	/* Style doesn't work as there are no actual links within the list, but the
+	style sheet is ready if the html file is updated. */
+}
+
+.button-container button {
+	background-color: var(--blurple);
+	color: white;
+	padding: .5em;
+	border-style: groove;
+	border-color: #0B1A38;
+	border-width: thin;
+	margin-bottom: 5%;
+	font-weight: lighter;
+}
